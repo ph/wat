@@ -1,5 +1,6 @@
 require "wat/version"
 
 module Wat
-  autoload 'lib/cli'  # Your code goes here...
+  autoload :CLI, 'wat/cli'
+  autoload :DataStore, 'wat/data_store'
 end

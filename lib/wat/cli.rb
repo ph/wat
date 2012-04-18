@@ -3,7 +3,10 @@ require 'debugger'
 module Wat
   class CLI
     def self.run(*argv)
-      name, time, message = argv
+      name argv.shift
+      time = argv.shift
+      message = argv.join(' ')
+
       if name.nil? || time.nil?
         puts "you need to specify a project key and a time for it."
       else
