@@ -9,7 +9,7 @@ module Wat
     end
 
     def write(time, message = nil)
-      statement = [Time.now.to_i, time, message].compact.join(";")
+      statement = [Time.now.to_i, Time.now.strftime("%Y-%m-%d"), time, message].compact.join(";")
       file_name = "#{name}.csv"
       File.open(destination.join(file_name), 'a') do |f|
         f.write("#{statement}\n")
