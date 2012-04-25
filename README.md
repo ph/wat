@@ -2,23 +2,23 @@
 
 TODO: Write a gem description
 
+TODO: Write specs..
+
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'wat'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install wat
 
-## Usage
+And then execute:
 
-TODO: Write usage instructions here
+    $ wat key time "message"
+    $ wat api 1 "fixing the world"
+
+Will keep the logs in ~/.wat
+    
+    $ cat ~/.wat/api.csv
+
+Add zsh autocomplete 
+> compctl -g '~/.wat/*(:t:r)' wat 
 
 ## Contributing
 
