@@ -4,9 +4,9 @@ require File.expand_path('../lib/wat/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Pier-Hugues Pellerin"]
   gem.email         = ["ph@heykimo.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Small time keeper with on CLI saving date to text files}
+  gem.summary       = %q{keeping time in csv files}
+  gem.homepage      = "https://github.com/ph/wat"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
