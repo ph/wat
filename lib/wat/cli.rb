@@ -1,5 +1,3 @@
-require 'debugger'
-
 module Wat
   class CLI
     def self.run(*argv)
