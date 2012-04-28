@@ -1,7 +1,8 @@
 module Wat
   class CLI
     def self.run(*argv)
-      name, time, message = argv
+      name, time = argv
+      message = argv[2.argv.size].join(' ')
 
       if name.nil? || time.nil?
         puts "you need to specify a project key and a time for it."
