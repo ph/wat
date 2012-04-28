@@ -25,5 +25,7 @@ module Wat
         content[0].should match(/2.5;yaarrrrgh!$/)
       end
     end
+
+    it "write a better check for the format"
   end
 end
