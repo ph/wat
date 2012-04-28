@@ -1,6 +1,6 @@
 module Wat
   class CLI
-    def self.run(output, *argv)
+    def self.run(output, argv)
       name, time = argv
 
       if name.nil? || time.nil?
