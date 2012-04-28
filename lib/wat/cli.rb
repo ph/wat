@@ -1,12 +1,13 @@
 module Wat
   class CLI
-    def self.run(*argv)
+    def self.run(output, *argv)
       name, time = argv
-      message = argv[2.argv.size].join(' ')
 
       if name.nil? || time.nil?
-        puts "you need to specify a project key and a time for it."
+        output.puts("you need to specify a project key and a time for it.")
       else
+        message = argv[2..argv.size].join(' ')
+
         data_store = DataStore.new(name)
         data_store.write(time, message)
       end

@@ -7,4 +7,4 @@ executable_file = Pathname.new(__FILE__).realpath
 $:.unshift(File.expand_path("../../lib", executable_file))
 
 require 'wat'
-Wat::CLI.run(*ARGV)
+Wat::CLI.run($stdout, ARGV)
