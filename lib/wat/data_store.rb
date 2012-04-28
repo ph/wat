@@ -17,7 +17,7 @@ module Wat
       statement = [name, current_time.to_i, current_time.strftime("%Y-%m-%d"), time, message].compact.join(";")
 
       f = File.open(DESTINATION.join(@file_name), 'a')
-      f.write(statement)
+      f.write("#{statement}\n")
     end
 
     def load
